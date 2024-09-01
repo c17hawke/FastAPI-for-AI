@@ -30,3 +30,18 @@
     ```bash
     pip install -r requirements.txt
     ```
+
+- To run app
+    - To run in dev environment
+
+        ```bash
+        fastapi dev main.py
+        ```
+
+    - To run in prod or non-dev environment
+
+        ```bash
+        fastapi dev main.py
+        ```
+    NOTE: make sure you are in correct directory that contains main.py file
+    
