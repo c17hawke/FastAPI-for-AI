@@ -1,4 +1,6 @@
-notebook
-ipywidgets
+fastapi[standard]
+uvicorn[standard]
+pydantic-settings
+httpx
 tqdm
 python-dotenv
