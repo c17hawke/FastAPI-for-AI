@@ -14,7 +14,7 @@ class TweetBase(SQLModel):
 
 class Tweet(TweetBase, table=True):
     timestamp: str = SQLField(..., primary_key=True, index=True, regex=r"^\d{14}$")
-    user_name: str = SQLField(index=True)
+    user_name: str = SQLField(..., index=True)
     edited_timestamp: Optional[str] = SQLField(regex=r"^\d{14}$")
 
 class TweetCreate(TweetBase):
