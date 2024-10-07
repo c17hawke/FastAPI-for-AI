@@ -37,7 +37,7 @@ async def twitter_timeline():
 async def user_timeline(user_name: str):
     user_tweets = [tweet for tweet in tweets_db if tweet.user_name == user_name]
     if not user_tweets:
-        return {"error": f"user: {user_name} not found"}
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"user: {user_name} not found!")
     return user_tweets
 
 @app.post("/{user_name}", response_model=TweetInDB)
