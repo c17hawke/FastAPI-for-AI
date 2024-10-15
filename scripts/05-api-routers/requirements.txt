@@ -1,0 +1,6 @@
+fastapi[standard]
+uvicorn[standard]
+pandas
+scikit-learn
+seaborn
+matplotlib
